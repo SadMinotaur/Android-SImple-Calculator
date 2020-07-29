@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">Calculator</string>
-    <string name="button">test</string>
+    <string name="app_name" translatable="false">Calculator</string>
+    <string name="textSizeInView">30sp</string>
+    <string name="textInButton">18sp</string>
 </resources>
