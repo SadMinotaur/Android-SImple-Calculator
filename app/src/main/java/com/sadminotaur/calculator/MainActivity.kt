@@ -6,6 +6,9 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import kotlin.math.cos
+import kotlin.math.sin
+import kotlin.math.tan
 
 class MainActivity : AppCompatActivity() {
 
@@ -40,8 +43,49 @@ class MainActivity : AppCompatActivity() {
 
     @SuppressLint("SetTextI18n")
     fun actions(view: View) {
+        inMemory.clear();
         val buttonText = (view as Button).text.toString()
         inMemory[buttonText[0]] = textView.text.toString().toDouble()
         textView.text = ""
+    }
+
+    @SuppressLint("SetTextI18n")
+    fun getResult(view: View) {
+        if (inMemory.size == 1) {
+            val action = inMemory.keys.firstOrNull()
+            val memoryNum = inMemory[action]
+            when (action) {
+                '/' -> {
+                    textView.text = (memoryNum!! / textView.text.toString().toDouble()).toString()
+                        .removeSuffix(".0")
+                }
+                '-' -> {
+                    textView.text = (memoryNum!! - textView.text.toString().toDouble()).toString()
+                        .removeSuffix(".0")
+                }
+                '+' -> {
+                    textView.text = (memoryNum!! + textView.text.toString().toDouble()).toString()
+                        .removeSuffix(".0")
+                }
+                '*' -> {
+                    textView.text = (memoryNum!! * textView.text.toString().toDouble()).toString()
+                        .removeSuffix(".0")
+                }
+            }
+        }
+    }
+
+    fun trigResult(view: View) {
+        when ((view as Button).text.toString()) {
+            "cos" -> {
+                textView.text = cos(textView.text.toString().toDouble()).toString()
+            }
+            "sin" -> {
+                textView.text = sin(textView.text.toString().toDouble()).toString()
+            }
+            "tan" -> {
+                textView.text = tan(textView.text.toString().toDouble()).toString()
+            }
+        }
     }
 }

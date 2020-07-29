@@ -28,7 +28,7 @@
             android:gravity="center"
             android:orientation="vertical"
             android:textColor="#000000"
-            android:textSize="@string/textSizeInView" />
+            android:textSize="@dimen/textSizeInView" />
 
         <TableRow
             android:layout_weight="1"
@@ -41,8 +41,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorTrigFunction"
+                android:onClick="trigResult"
                 android:text="@string/sin"
-                android:textSize="@string/textInButton" />
+                android:textSize="@dimen/textInButton" />
 
             <Button
                 android:id="@+id/button14"
@@ -50,8 +51,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorTrigFunction"
+                android:onClick="trigResult"
                 android:text="@string/cos"
-                android:textSize="@string/textInButton" />
+                android:textSize="@dimen/textInButton" />
 
             <Button
                 android:id="@+id/button13"
@@ -59,8 +61,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorTrigFunction"
+                android:onClick="trigResult"
                 android:text="@string/tan"
-                android:textSize="@string/textInButton" />
+                android:textSize="@dimen/textInButton" />
 
             <Button
                 android:id="@+id/button12"
@@ -68,8 +71,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorEqual"
+                android:onClick="getResult"
                 android:text="@string/equal"
-                android:textSize="@string/textInButton" />
+                android:textSize="@dimen/textInButton" />
         </TableRow>
 
         <TableRow
@@ -83,7 +87,7 @@
                 android:layout_height="match_parent"
                 android:onClick="buttonDigits"
                 android:text="@string/zero"
-                android:textSize="@string/textInButton" />
+                android:textSize="@dimen/textInButton" />
 
             <Button
                 android:id="@+id/button18"
@@ -92,7 +96,7 @@
                 android:layout_height="match_parent"
                 android:onClick="buttonDot"
                 android:text="@string/dot"
-                android:textSize="@string/textInButton" />
+                android:textSize="@dimen/textInButton" />
 
             <Button
                 android:id="@+id/button17"
@@ -102,7 +106,7 @@
                 android:background="@color/colorClean"
                 android:onClick="clean"
                 android:text="@string/AC"
-                android:textSize="@string/textInButton" />
+                android:textSize="@dimen/textInButton" />
 
             <Button
                 android:id="@+id/button16"
@@ -112,7 +116,7 @@
                 android:background="@color/colorBasicFunction"
                 android:onClick="actions"
                 android:text="@string/minus"
-                android:textSize="@string/textInButton" />
+                android:textSize="@dimen/textInButton" />
         </TableRow>
 
         <TableRow
@@ -126,7 +130,7 @@
                 android:layout_height="match_parent"
                 android:onClick="buttonDigits"
                 android:text="@string/one"
-                android:textSize="@string/textInButton" />
+                android:textSize="@dimen/textInButton" />
 
             <Button
                 android:id="@+id/button7"
@@ -135,7 +139,7 @@
                 android:layout_height="match_parent"
                 android:onClick="buttonDigits"
                 android:text="@string/two"
-                android:textSize="@string/textInButton" />
+                android:textSize="@dimen/textInButton" />
 
             <Button
                 android:id="@+id/button8"
@@ -144,7 +148,7 @@
                 android:layout_height="match_parent"
                 android:onClick="buttonDigits"
                 android:text="@string/three"
-                android:textSize="@string/textInButton" />
+                android:textSize="@dimen/textInButton" />
 
             <Button
                 android:id="@+id/button1"
@@ -154,7 +158,7 @@
                 android:background="@color/colorBasicFunction"
                 android:onClick="actions"
                 android:text="@string/plus"
-                android:textSize="@string/textInButton" />
+                android:textSize="@dimen/textInButton" />
         </TableRow>
 
         <TableRow
@@ -168,7 +172,7 @@
                 android:layout_height="match_parent"
                 android:onClick="buttonDigits"
                 android:text="@string/four"
-                android:textSize="@string/textInButton" />
+                android:textSize="@dimen/textInButton" />
 
             <Button
                 android:id="@+id/button10"
@@ -177,7 +181,7 @@
                 android:layout_height="match_parent"
                 android:onClick="buttonDigits"
                 android:text="@string/five"
-                android:textSize="@string/textInButton" />
+                android:textSize="@dimen/textInButton" />
 
             <Button
                 android:id="@+id/button9"
@@ -186,7 +190,7 @@
                 android:layout_height="match_parent"
                 android:onClick="buttonDigits"
                 android:text="@string/six"
-                android:textSize="@string/textInButton" />
+                android:textSize="@dimen/textInButton" />
 
             <Button
                 android:id="@+id/button6"
@@ -196,7 +200,7 @@
                 android:background="@color/colorBasicFunction"
                 android:onClick="actions"
                 android:text="@string/division"
-                android:textSize="@string/textInButton" />
+                android:textSize="@dimen/textInButton" />
         </TableRow>
 
         <TableRow
@@ -210,7 +214,7 @@
                 android:layout_height="match_parent"
                 android:onClick="buttonDigits"
                 android:text="@string/seven"
-                android:textSize="@string/textInButton" />
+                android:textSize="@dimen/textInButton" />
 
             <Button
                 android:id="@+id/button4"
@@ -219,7 +223,7 @@
                 android:layout_height="match_parent"
                 android:onClick="buttonDigits"
                 android:text="@string/eighth"
-                android:textSize="@string/textInButton" />
+                android:textSize="@dimen/textInButton" />
 
             <Button
                 android:id="@+id/button3"
@@ -228,7 +232,7 @@
                 android:layout_height="match_parent"
                 android:onClick="buttonDigits"
                 android:text="@string/nine"
-                android:textSize="@string/textInButton" />
+                android:textSize="@dimen/textInButton" />
 
             <Button
                 android:id="@+id/button2"
@@ -238,7 +242,7 @@
                 android:background="@color/colorBasicFunction"
                 android:onClick="actions"
                 android:text="@string/multiply"
-                android:textSize="@string/textInButton" />
+                android:textSize="@dimen/textInButton" />
         </TableRow>
 
     </TableLayout>
